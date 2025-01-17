@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awad Ahmed Abbas - Mechatronics Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Awad Ahmed Abbas</h1>
+    <p>Innovative Mechatronics Engineer</p>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="your_photo.jpg" alt="Awad Ahmed Abbas" class="profile-pic">
+            <p class="justified">I am a passionate Mechatronics engineer with a strong foundation in SolidWorks and ANSYS. My expertise lies in mechanical design, CFD, and structural analysis. I thrive on delivering innovative solutions in motorsport and robotics, always pushing the boundaries of technology and creativity.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul class="services-list">
+            <li>Design and Simulation using ANSYS (Thermal, CFD, Structural)</li>
+            <li>3D Modeling with SolidWorks</li>
+            <li>Engineering Consultation and Optimization</li>
+            <li>Research and Thesis Assistance</li>
+            <li>Graduation Project Guidance</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="gallery">
+            <div class="project-item">
+                <img src="project1.jpg" alt="Femur Bone with ZK60 Alloy Plate">
+                <p>Detailed analysis of femur bone reinforced with ZK60 alloy plate.</p>
+            </div>
+            <div class="project-item">
+                <img src="project2.jpg" alt="Paddle Wheel CFD">
+                <p>CFD analysis of paddle wheel for a floating waste collecting robot.</p>
+            </div>
+            <div class="project-item">
+                <img src="project3.jpg" alt="Double Tube Heat Exchanger Simulation">
+                <p>Simulation of thermal efficiency in a double tube heat exchanger.</p>
+            </div>
+            <div class="project-item">
+                <img src="project4.jpg" alt="Heat Exchanger Pressure Contour">
+                <p>Pressure contour analysis in a heat exchanger system.</p>
+            </div>
+            <div class="project-item">
+                <img src="project5.jpg" alt="CFD Simulation of Airflow">
+                <p>3D CFD simulation of airflow through a duct with elliptic objects.</p>
+            </div>
+            <div class="project-item">
+                <img src="project6.jpg" alt="2D Pressure Contour">
+                <p>2D pressure contour analysis on a plane within a duct.</p>
+            </div>
+            <div class="project-item">
+                <img src="project7.jpg" alt="Velocity Vector">
+                <p>Velocity vector analysis in a duct system.</p>
+            </div>
+            <div class="project-item">
+                <img src="project8.jpg" alt="Deformation Analysis">
+                <p>Deformation analysis for femur bone and ZK60 plate using static structural ANSYS.</p>
+            </div>
+            <div class="project-item">
+                <img src="project9.jpg" alt="Sidewing Pressure Contour">
+                <p>Pressure contour analysis on a sidewing for Formula Student.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <ul class="contact-list">
+            <li><img src="phone_icon.png" alt="Phone" class="icon"> +201028121895</li>
+            <li><img src="whatsapp_icon.png" alt="WhatsApp" class="icon"> +201028121895</li>
+            <li><img src="email_icon.png" alt="Email" class="icon"> <a href="mailto:Awadahmed99@outlook.com">Awadahmed99@outlook.com</a></li>
+            <li><img src="linkedin_icon.png" alt="LinkedIn" class="icon"> <a href="https://www.linkedin.com/in/awad-ahmed-346517182/" target="_blank">LinkedIn</a></li>
+            <li><img src="share_icon.png" alt="Share" class="icon"> <a href="#" onclick="copyLink()">Share Portfolio</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2023 Awad Ahmed Abbas</p>
+</footer>
+
+<script>
+    // Interactive effect for images
+    const images = document.querySelectorAll('.gallery img');
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            img.classList.toggle('enlarge');
+        });
+    });
+
+    // Interactive effect for headings
+    const headings = document.querySelectorAll('h2');
+    headings.forEach(heading => {
+        heading.addEventListener('mouseover', () => {
+            heading.style.color = '#2575fc';
+        });
+        heading.addEventListener('mouseout', () => {
+            heading.style.color = '#333';
+        });
+    });
+
+    // Copy link function
+    function copyLink() {
+        const dummy = document.createElement('input');
+        document.body.appendChild(dummy);
+        dummy.value = window.location.href;
+        dummy.select();
+        document.execCommand('copy');
+        document.body.removeChild(dummy);
+        alert('Portfolio link copied to clipboard!');
+    }
+</script>
+
+</body>
+</html>
